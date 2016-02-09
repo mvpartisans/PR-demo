@@ -1,9 +1,12 @@
 #!groovy
 echo 'hello today from master'
-node {
-  echo 'pull 7'
-  checkout scm
-  sh 'ls -l'
-}
 
-echo '9'
+node {
+  stage 'Build'
+  checkout scm  
+  echo 'Building'
+  sh 'ls -l'
+  stage 'Test'  
+  echo 'Test'
+
+}

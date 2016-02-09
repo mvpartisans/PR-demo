@@ -5,3 +5,5 @@ node {
   checkout scm
   sh 'ls -l'
 }
+
+echo '8'

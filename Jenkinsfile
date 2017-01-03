@@ -8,5 +8,5 @@ node {
   sh 'ls -l'
   stage 'Test'  
   echo 'Test'
-  echo 'unit tests'
+  echo 'faster unit tests'
 }
